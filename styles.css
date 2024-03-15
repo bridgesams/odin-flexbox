@@ -5,6 +5,17 @@ body {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    transition: ease-in-out;
+}
+
+a:hover {
+    position: relative;
+    bottom: 5px;
+}
+
 /* Header Styling */
 #header {
     display: flex;
@@ -22,6 +33,8 @@ body {
     color: #F9FAF8;
     gap: 16px;
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .heading-img {
@@ -155,4 +168,95 @@ body {
     cursor: pointer;
     background-color: #285bad;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Quote Section Styling */
+
+.quote {
+    display: flex;
+    padding: 32px 170px;
+    background-color: #E5E7EB;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.quote-content {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+    color: #1F2937;
+    margin: 0px;
+    padding: 0px;
+    font-weight: lighter;
+    font-size: 36px;
+}
+
+.quote-name {
+    align-self: flex-end;
+    font-weight: bolder;
+    padding: 0px;
+    margin: 0px;
+    font-size: 32px;
+}
+
+/* Contact Section Styling */
+
+#contact {
+    margin-bottom: 32px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 25px;
+    margin: 0px 520px;
+    border-radius: 10px;
+    gap: 70px;
+}
+
+.contact-info>h2 {
+    padding: 0px;
+    margin: 0px 10px 8px 0px;
+}
+
+.contact-button {
+    align-self: center;
+}
+
+.contact-btn {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    border-color: #E5E7EB;
+}
+
+.contact-btn:hover {
+    background-color: #659efa;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-info>p {
+    font-size: 18px;
+    margin: 0px 0px 8px 0px;
+    text-align: left;
+}
+
+/* Footer Styling */
+
+#footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 32px;
+    font-size: large;
 }
